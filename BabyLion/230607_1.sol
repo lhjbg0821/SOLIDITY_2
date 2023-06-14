@@ -33,7 +33,7 @@ contract Q2{ // .......??..?
         string memory table = "";
         
         for (uint i = 1; i <= 9; i++) {
-            uint result = number * i;
+            uint result = _n * i;
             string memory row = string(abi.encodePacked(_n, " x ", i, " = ", result, "\n"));
             table = string(abi.encodePacked(table, row));
         }
